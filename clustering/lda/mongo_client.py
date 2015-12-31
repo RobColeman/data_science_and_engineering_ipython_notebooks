@@ -3,9 +3,9 @@ import pymongo
 from bson import ObjectId
 from pymongo import MongoClient
 
-mongo_ip = '10.0.3.43'
-mongo_port = 27017
-mongo_db_name = "lessneglect2_development"
+mongo_ip = "omitted"
+mongo_port = "omitted"
+mongo_db_name = "omitted"
 event_collection_name = "event_types"
 session_collection_name = "sessions"
 
