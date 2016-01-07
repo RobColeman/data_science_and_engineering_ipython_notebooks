@@ -14,6 +14,7 @@ numpy==1.9.2
 nltk==7.1.2
 pandas==0.16.2
 ptyprocess==0.5
+py4j==0.9
 pymc==2.3.5
 Pygments==2.0.2
 pyparsing==2.0.3
