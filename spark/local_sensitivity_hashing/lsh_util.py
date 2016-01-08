@@ -36,3 +36,18 @@ def to_bucket(vec):
         else:
             s += str(0)
     return int(s, 2)
+
+
+def reduce_min_max(a, b):
+    ami, amx = a
+    bmi, bmx = b
+    mi, mx = [], []
+    mi = [min(i,j) for i, j in zip(ami,bmi)]
+    mx = [max(i,j) for i, j in zip(amx,bmx)]
+    return (mi, mx)
+
+    
+def get_ranges(rdd):
+    mi, mx = rdd.map(lambda t: (t[1],t[1])).reduce(reduce_min_max)
+    return ([x - i for i, x in zip(mi,mx)], mi)
+
