@@ -3,6 +3,7 @@ def to_dict(tup):
     bucket, c = tup
     return (bucket, {c: 1})
 
+
 def reduce_count_clusters(a,b):
     for k, v in a.items():
         if k in b:
@@ -11,16 +12,19 @@ def reduce_count_clusters(a,b):
             b[k] = v
     return b
 
+
 def gini_impurity(tup):
     bucket, d = tup
     count = float(sum(d.values()))
     gini = 1 - sum([(float(v) / count)**2 for v in d.values()])
     return (bucket, gini, count)
 
+
 def weighted_gini(A):
     buckets, ginis, counts = zip(*A)
     N = float(sum(counts))
     return sum([g*(c/N) for g,c in zip(ginis,counts)])
+
 
 def to_bucket(vec):
     s = ""
