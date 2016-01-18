@@ -1,1 +1,0 @@
-def cosine_distance():
