@@ -23,3 +23,6 @@ def jaccard_index(A,B):
   A = set(A)
   B = set(B)
   return float(len(A.intersection(B))) / float(len(A.union(B)))
+
+
+
