@@ -25,4 +25,5 @@ def jaccard_index(A,B):
   return float(len(A.intersection(B))) / float(len(A.union(B)))
 
 
-
+def jaccard_distance(A,B):
+  return 1.0 - jaccard_index(A,B)
