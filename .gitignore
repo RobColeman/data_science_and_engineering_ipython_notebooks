@@ -59,4 +59,3 @@ target/
 # notebook_checkpoitns
 *.ipynb_checkpoints/
 
-setup.sh
