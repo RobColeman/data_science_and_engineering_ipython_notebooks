@@ -30,5 +30,6 @@ six==1.10.0
 sympy==0.7.6
 terminado==0.5
 tornado==4.2
+tensorflow==0.6.0
 wheel==0.24.0
 urltools==0.3.2
