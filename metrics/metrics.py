@@ -59,3 +59,10 @@ def kl_distance(p, q):
     p = np.asarray(p, dtype=np.float)
     q = np.asarray(q, dtype=np.float)
     return np.sum(np.where(p != 0,(p-q) * np.log10(p / q), 0))
+
+
+def softmax(z):
+    exp_z = np.exp(z)
+    return exp_z / exp_z.sum()
+
+
