@@ -55,3 +55,7 @@ def cross_entropy_multinomial(true, test):
     return total
 
 
+def kl_distance(p, q):
+    p = np.asarray(p, dtype=np.float)
+    q = np.asarray(q, dtype=np.float)
+    return np.sum(np.where(p != 0,(p-q) * np.log10(p / q), 0))
