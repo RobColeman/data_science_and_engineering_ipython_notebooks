@@ -4,7 +4,7 @@ a collection of examples ranging from algorithms, general programming, library u
 
 ## requirements:
 
-The reuqired python packages can be installed with the following command
+The required python packages can be installed with the following command
 
 `pip install -r requirements.txt`
 
