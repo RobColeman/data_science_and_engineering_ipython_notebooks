@@ -23,6 +23,7 @@ Additionally, there are some spark examples, which require you to download a pre
 To set these environment variables, there is a script "setup.sh" which will set these.  Change the paths in this file to reflect the install location of this library and spark.  If you chose to not use spark, comment out the lines refering to spark.
 
 Then run the following command:
+
 `source setup.sh`
 
 
