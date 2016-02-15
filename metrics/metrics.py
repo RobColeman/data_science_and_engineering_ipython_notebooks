@@ -66,3 +66,8 @@ def softmax(z):
     return exp_z / exp_z.sum()
 
 
+def log_softmax(z):
+    exp_z = np.exp(z)
+    return np.array(z) - np.log(exp_z.sum())
+
+
