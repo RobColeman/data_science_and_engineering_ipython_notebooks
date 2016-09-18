@@ -4,7 +4,9 @@ a collection of examples ranging from algorithms, general programming, library u
 
 ## requirements:
 
-The required python packages can be installed with the following command
+There are a mix of Python 2.7 and Python 3 notebooks in here.  Support for the Python 3 required packages is still in progress.
+
+The required python 2.7 packages can be installed with the following command
 
 `pip install -r requirements.txt`
 
