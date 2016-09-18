@@ -1,5 +1,7 @@
 # data_science_ipython_notebooks
-a collection of examples ranging from algorithms, general programming, library use, machine learning, data mining, and data visualization
+A collection of examples ranging from algorithms, general programming, library use, machine learning, data mining, and data visualization.
+
+This is not meant to be polished collection of works.  Notably absent are explinations for many applications, algorithms or problems.  Little, if any proof-reading has taken place, so read at your own risk.
 
 
 ## requirements:
