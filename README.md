@@ -1,10 +1,14 @@
 # data_science_ipython_notebooks
-a collection of examples ranging from algorithms, general programming, library use, machine learning, data mining, and data visualization
+A collection of examples ranging from algorithms, general programming, library use, machine learning, data mining, and data visualization.
+
+This is not meant to be polished collection of works.  Notably absent are explinations for many applications, algorithms or problems.  Little, if any proof-reading has taken place, so read at your own risk.
 
 
 ## requirements:
 
-The required python packages can be installed with the following command
+There are a mix of Python 2.7 and Python 3 notebooks in here.  Support for the Python 3 required packages is still in progress.
+
+The required python 2.7 packages can be installed with the following command
 
 `pip install -r requirements.txt`
 
