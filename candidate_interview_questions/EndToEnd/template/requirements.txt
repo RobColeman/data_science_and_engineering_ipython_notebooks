@@ -1,0 +1,7 @@
+flask==0.12.2
+flask-script==2.0.5
+docker-compose==1.16.1
+flask-sqlalchemy==2.3.2
+psycopg2==2.7.3.1
+flask-testing==0.6.2
+gunicorn==19.7.1
