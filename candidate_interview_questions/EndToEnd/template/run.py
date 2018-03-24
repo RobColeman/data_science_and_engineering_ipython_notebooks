@@ -13,9 +13,8 @@ solve the following
 
 def main(args):
 	""" Skeleton of python app"""
-	
-    return 0
-	
+	return 0
+
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+	main(sys.argv[1:])
