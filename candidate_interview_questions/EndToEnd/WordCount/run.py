@@ -5,11 +5,13 @@ import sys
 def main(args):
 	""" Skeleton of python app"""
 	if len(args) < 1:
-		print("Inpute filepath required")
+		print("Input filepath required")
 		return 1
+
 	if len(args) < 2:
 		print("Output filepath required")
 		return 1
+		
 	input_file = open(args[0], 'r')
 	output_path = args[1]
 
