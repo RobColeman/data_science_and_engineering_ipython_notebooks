@@ -3,18 +3,20 @@ import sys
 
 
 def main(args):
-	""" Skeleton of python app"""
 	if len(args) < 1:
 		print("Input filepath required")
 		return 1
+	else:
+		input_filepath = args[0]
 
 	if len(args) < 2:
 		print("Output filepath required")
 		return 1
-		
-	input_file = open(args[0], 'r')
-	output_path = args[1]
+	else:
+		output_filepath = args[1]
 
+	input_file = open(input_filepath, 'r')
+	# wordcount core
 	word_count = {}
 	stop_chars = ['.',',',';',':']
 	for line in input_file.readlines():
@@ -34,18 +36,17 @@ def main(args):
 
 	input_file.close()
 
+	# write output
+	output_file = open(output_filepath, 'w')
 	if len(word_count) < 1:
 		print("No words found")
-		output_file = open(output_path, 'w')
 		output_file.close()
-		return 0
-
-	output_file = open(output_path, 'w')
-	word_count = sorted(word_count.items())
-	for word, count in word_count[:-1]:
-		output_file.write("{}\t{}\n".format(word, count))
-	# last line
-	output_file.write("{}\t{}".format(word_count[-1][0], word_count[-1][1]))
+	else:
+		word_count = sorted(word_count.items())
+		for word, count in word_count[:-1]:
+			output_file.write("{}\t{}\n".format(word, count))
+		# last line
+		output_file.write("{}\t{}".format(word_count[-1][0], word_count[-1][1]))
 
 	output_file.close()
 
